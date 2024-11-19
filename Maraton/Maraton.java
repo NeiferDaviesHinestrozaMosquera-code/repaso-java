@@ -46,3 +46,61 @@ public class Maraton {
     }
     
 }
+
+
+// package Maraton;
+
+// import java.util.Scanner;
+// import java.util.Arrays;
+
+// public class Maraton {
+//     private static final String PROMPT = "Ingrese ";
+//     private static final String DNI_PROMPT = PROMPT + "DNI del usuario";
+//     private static final String NAME_PROMPT = PROMPT + "Nombre del usuario";
+//     private static final String AGE_PROMPT = PROMPT + "Edad del usuario";
+
+//     public static void main(String[] args) {
+//         Scanner scanner = new Scanner(System.in);
+        
+//         while (!isValidInput(scanner)) {
+//             System.out.println(DNI_PROMPT);
+//             String dni = scanner.nextLine().trim();
+            
+//             System.out.println(NAME_PROMPT);
+//             String name = scanner.nextLine().trim();
+            
+//             System.out.println(AGE_PROMPT);
+//             int age = getValidAge(scanner);
+            
+//             printCategory(age);
+//             printUserDetails(dni, name, age);
+//         }
+        
+//         scanner.close();
+//     }
+
+//     private static boolean isValidInput(Scanner scanner) {
+//         return !scanner.hasNextLine() || scanner.nextLine().trim().isEmpty();
+//     }
+
+//     private static int getValidAge(Scanner scanner) {
+//         while (!scanner.hasNextInt()) {
+//             System.out.println("Por favor, ingrese un número entero.");
+//             scanner.next(); // Consume invalid input
+//         }
+//         return scanner.nextInt();
+//     }
+
+//     private static void printCategory(int age) {
+//         String[] categories = {
+//             "Menores A", "Menores B", "Juveniles", "Adultos", "Adultos Mayores"
+//         };
+//         int index = (age - 6) / 5;
+//         System.out.println("La categoría es: " + categories[Math.min(index, categories.length - 1)]);
+//     }
+
+//     private static void printUserDetails(String dni, String name, int age) {
+//         System.out.println("Imprimir los datos del usuario " + dni + " " + name + " " + age);
+//     }
+// }
+
