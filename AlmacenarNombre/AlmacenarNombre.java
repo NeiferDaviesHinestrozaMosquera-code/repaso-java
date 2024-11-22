@@ -23,7 +23,7 @@ public class AlmacenarNombre {
 
         //Recorrido de vectores
         for (int i = 0; i < vector.length; i++) {
-            System.out.println("Nombre de la posicion " + i +" es :" + vector[i]);
+            System.out.println("Nombre de la posicion " + i +" es : " + vector[i]);
         }
 
         //Carga de vectores
